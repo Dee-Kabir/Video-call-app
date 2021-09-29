@@ -6,7 +6,7 @@ const path = require("path");
 const server = http.createServer(app)
 const io = require('socket.io')(server, {
     cors : {
-        origin : "http://localhost:3000",
+        origin : "https://zoomby.herokuapp.com/",
         methods: ["GET","POST"]
     }
 })
