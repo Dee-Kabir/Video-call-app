@@ -9,7 +9,7 @@ import Peer from "simple-peer"
 import {io} from "socket.io-client"
 import "./App.css"
 
-let socket = io('/')
+let socket = io('https://zoomby.herokuapp.com/')
 socket = socket.connect()
 function App() {
 	const [ me, setMe ] = useState("")
