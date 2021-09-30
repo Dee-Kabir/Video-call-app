@@ -31,6 +31,6 @@ io.on("connection",(socket)=>{
         io.to(data.to).emit("busy",{message: data.message})
     })
 })
+const PORT = process.env.PORT || 5000
 
-
-server.listen(5000, () => console.log("server is running"))
+server.listen(PORT, () => console.log("server is running"))
