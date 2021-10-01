@@ -45,7 +45,6 @@ function App() {
 	socket.on("me", (id) => {
 			setMe(id)
 		})
-
 		socket.on("callUser", (data) => {
 			if(receivingCall){
 				socket.emit("busy",{
